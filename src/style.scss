@@ -1,0 +1,60 @@
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#startedgame {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.panel {
+  background: #91a2ab;
+  width: 304px;
+  height: 304px;
+  margin: 30px auto;
+  box-sizing: border-box;
+
+  .checker {
+    background: white;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 1px;
+
+    &[id^="checker-1"] {
+      margin-top: 0;
+    }
+
+    &[id^="checker-3"] {
+      margin-bottom: 0;
+    }
+
+    &[id$="1"] {
+      margin-left: 0;
+    }
+
+    &[id$="3"] {
+      margin-right: 0;
+    }
+
+    &.checked {
+      display: block;
+      font-size: 50px;
+      line-height: 50px;
+      padding: 25px;
+    }
+
+    &.circle::before {
+      content: "⭕️";
+    }
+
+    &.cross::before {
+      content: "❌";
+    }
+  }
+}
+
+button {
+  margin-top: 20px;
+}

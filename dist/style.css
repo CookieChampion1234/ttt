@@ -1,0 +1,53 @@
+@charset "UTF-8";
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#startedgame {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.panel {
+  background: #91a2ab;
+  width: 304px;
+  height: 304px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+.panel .checker {
+  background: white;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 1px;
+}
+.panel .checker[id^=checker-1] {
+  margin-top: 0;
+}
+.panel .checker[id^=checker-3] {
+  margin-bottom: 0;
+}
+.panel .checker[id$="1"] {
+  margin-left: 0;
+}
+.panel .checker[id$="3"] {
+  margin-right: 0;
+}
+.panel .checker.checked {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  padding: 25px;
+}
+.panel .checker.circle::before {
+  content: "O";
+}
+.panel .checker.cross::before {
+  content: "X";
+}
+
+button {
+  margin-top: 20px;
+}
